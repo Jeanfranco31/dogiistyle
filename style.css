@@ -13,7 +13,7 @@
   text-align: center;
 }
 .logo h1{
-  font-size: 90px;
+  font-size: 130px;
   padding: 5px 0;
 }
 
@@ -38,7 +38,7 @@ nav{/**/
   font-weight: 400;
   color:#000;
   padding: 5px 5px;
-  font-size: 20px;
+  font-size: 40px;
 }
 .options li a:hover{/**/
   color:#fff;
@@ -57,6 +57,7 @@ nav{/**/
 .socialMedia li{
   list-style: none; 
   padding: 5px 5px;
+  margin: 10px 0 10px 0;
 }
 .socialMedia li a{
   text-decoration: none; 
@@ -68,7 +69,7 @@ nav{/**/
   transition: all 400ms ease;
 }
 i{
-  font-size: 20px;
+  font-size: 50px;
 }
 #hero{
     display: flex;
@@ -125,17 +126,21 @@ i{
 }
 /*fin animacion*/
 #about_me .container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align: center;
   padding: 200px 12px;
-  background-color: #bbbbbb;
   margin: 0 auto;
   color: black;
   font-size: 25px;
   font-weight: 400;
   width:90%;
+  height:100vh;
 }
 #about_me .texto{
   font-weight: bolder;
+  font-size:80px;
 }
 
 /*-----------CONTENEDOR DE TARJETAS-----------------*/
