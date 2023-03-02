@@ -141,11 +141,11 @@ i{
 #about_me .texto{
   font-weight: bolder;
   font-size:80px;
+  text-align: center;
+  margin: 40px 0;
 }
 
 /*-----------CONTENEDOR DE TARJETAS-----------------*/
-
-
 
 #tit-ser{
   display:block;
@@ -154,7 +154,7 @@ i{
   font-size:60px;
 }
 .container-cards{
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns:1fr;
@@ -264,13 +264,18 @@ i{
   background: #ffffff;
 }
 
-.fa-whatsapp{
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background: #ffffff;
+}
+
+.social-links .fa-whatsapp{
   color:#25D366;
 }
-.fa-facebook-f{
+.social-links .fa-facebook-f{
   color:#4267B2;
 }
-.fa-instagram-square{
+.social-links .fa-instagram-square{
  color:#d92e7f;
 }
 /*FIN FOOTER*/
