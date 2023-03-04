@@ -5,104 +5,113 @@
   margin: 0;
   padding: 0;
   font-family: Roboto;
+  text-decoration: none;
+  list-style: none;
 }
 
 .logo{
-  width:100%;
-  background-color: #e91360;
-  text-align: center;
-}
-.logo h1{
-  font-size: 130px;
-  padding: 5px 0;
-}
-
-nav{
-  background-color: #e91363;
-}
-.options{
-  width:100%;
-  display: flex;
-  justify-content: space-evenly;
   background-color: #fff;
-  border-radius: 20px;
+  width:80%;
+  height: 252px;
 }
+.logo img{
+  height: 252px;
+  width: 450px;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("manicure.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.options li{
-  list-style: none; 
-  padding: 5px 5px;
-  margin: 3px 0 3px 0;
 }
-.options li a{
-  text-decoration: none;
-  font-weight: 400;
-  color:#000;
-  padding: 5px 5px;
-  font-size: 40px;
-}
-.options li a:hover{/**/
-  color:#fff;
-  background: #24262b;
-  border-radius: 20px;
-  transition: all 400ms ease;
-}
-
-.socialMedia{
-  width:100%;
+nav{
+  height: 250px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  background-color: #e91363;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.bar-btn{
+  font-weight: 900;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.fa-bars{
+  font-size: 70px;
+  color: #000;
+}
+.nav-menu{
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 0vh;
+  top: 248px;
+  background-color:rgb(255,255,255);
+  text-align: center;
+  transition: all .5s;
 }
 
-.socialMedia li{
-  list-style: none; 
-  padding: 5px 5px;
-  margin: 10px 0 10px 0;
+.nav-menu li{  
+  display:none;
+  line-height: 30px;
+  font-size: 60px;
+  margin: 100px 0;
+  padding: 60px 0;
+  text-transform: uppercase;
 }
-.socialMedia li a{
-  text-decoration: none; 
-  color:#ffffff;
+.nav-menu li a{
+  color: #000;
+  font-size: 4rem;
+  font-weight: 500;
 }
-.socialMedia li a:hover{
-  color:#000;
-  border-radius: 20px;
-  transition: all 400ms ease;
+
+.nav-menu li a.active, .nav-menu li a:hover{
+  color: rgb(248,8,8);
+  transition: .3s;
+}
+
+#check{
+  display: none;
+}
+#check:checked ~ .nav-menu{
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+  display: block; 
+}
+#check:checked ~ #hero{
+  opacity: 0;
+}
+
+#check:checked ~ .nav-menu li a, .nav-menu{
+  height: 0vh;
 }
 i{
   font-size: 50px;
 }
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 80vh;
-    background-image: 
-    linear-gradient(0deg,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.2)
-    ),url("manicure.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-#hero img{
-    display: flex;
-    background-size: cover;
-}
 #hero h1{
+    position: absolute;
+    top: 90vh;
+    bottom: 50px;
+    left: 50px;
+
     z-index: 1;
+
     font-weight: bold;
     font-size: 9vw;
-    bottom: 50px;
-    left: 30px;
+
     white-space: pre;
     color: rgb(0, 0, 0);
-    width: 15ch;
+    width: 500px;
     animation:typing 2s /*steps(12)*/,
     blink .5s infinite step-end alternate;
     overflow:hidden;
+    opacity: 1;
 }
 
 
@@ -135,7 +144,7 @@ i{
   color: black;
   font-size: 25px;
   font-weight: 400;
-  width:90%;
+  width:100%;
   height:100vh;
 }
 #about_me .texto{
@@ -147,19 +156,21 @@ i{
 
 /*-----------CONTENEDOR DE TARJETAS-----------------*/
 
+
+
 #tit-ser{
   display:block;
   margin: 20px auto;
   text-align: center;
-  font-size:60px;
+  font-size:60px;/**/
 }
 .container-cards{
   width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows: 900px;
-  row-gap: 40px;
+  grid-template-rows: 700px;/**/
+  row-gap:40px;/**/
 }
 
 .container-cards .card{
@@ -168,16 +179,15 @@ i{
 }
 .card img{
   width: 100%;
-  height: 800px;
+  height: 600px;/**/
 }
 .card h2{
   text-align: center;
   line-height: 50px;
-  font-weight:500;
+  font-weight: 500;/**/
 }
 .card{
   transition: all 400ms ease;
- 
 }
 .card:hover{
   transform: translateY(-3%);
@@ -188,7 +198,7 @@ i{
 /*INICIO FOOTER*/
 .container_footer{
   width: 100%;
-  height:300px;
+  height: 300px;
 }
 .footer{
   background-color: rgba(0, 5, 8, 0.918);
@@ -201,13 +211,12 @@ i{
 }
 .container_footer ul{
   list-style: none;
-}
 
+}
 .footer-col{
   width: 50%;
   padding: 0 15px;
 }
-
 .footer-col h4{
   font-size: 4rem;
   color: #fff;
@@ -216,7 +225,6 @@ i{
   font-weight: 500;
   position: relative;
 }
-
 .footer-col h4::before{
   content: '';
   position: absolute;
@@ -227,11 +235,9 @@ i{
   box-sizing: border-box;
   width: 50px;
 }
-
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
-
 .footer-col ul li a{
   font-size: 3rem;
   text-transform: capitalize;
@@ -242,26 +248,21 @@ i{
   display: block;
   transition: all 0.3s ease;
 }
-
 .footer-col ul li a:hover{
   color: #fff;  
   padding-left:10px;
 }
-
 .footer-col .social-links a{
   display: inline-block;
   height: 40px;
   width: 40px;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
+  /*border-radius: 50%;*/
   color: #fff;
   transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover{
-  color: #24262b;
-  background: #ffffff;
 }
 
 .footer-col .social-links a:hover{
@@ -276,7 +277,7 @@ i{
   color:#4267B2;
 }
 .social-links .fa-instagram-square{
- color:#d92e7f;
+ color:#fff;
 }
 /*FIN FOOTER*/
 
