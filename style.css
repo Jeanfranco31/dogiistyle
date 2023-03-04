@@ -15,7 +15,7 @@
   height: 252px;
 }
 .logo img{
-  height: 240px;
+  height: 220px;
   width: 450px;
 }
 header{
@@ -37,7 +37,7 @@ nav{
 }
 .bar-btn{
   font-weight: 900;
-  margin-right: 0px;
+  margin-right: 20px;
   cursor: pointer;
 }
 .fa-bars{
