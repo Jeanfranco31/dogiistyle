@@ -17,6 +17,7 @@
 .logo img{
   height: 220px;
   width: 450px;
+  margin:auto 0;
 }
 header{
   width: 100%;
